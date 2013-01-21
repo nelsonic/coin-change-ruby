@@ -32,19 +32,20 @@ The way we *"test"* the returned amount using **Rspec** by writing a *Unit Test*
 
 #### Explanation: 
 With this *test* we are saying **it** (the function/method) will return a **result [5,1]** for **input 6**
-then we write an "*Expectation*" to test this.
+then we write an *"Expectation"* to test this.
 
-**expect(** - setting up an *expectation* for the *result* we are going to get back from calling the change *method*
+**expect(**    - setting up an *expectation* for the *result* we are going to get back from calling the change *method*
 
-**subject.change(** - calling the *method* **Change.change** with a specific amount (the *argument* or *parameter*)
+**subject.change(**    - calling the *method* **Change.change** with a specific amount (the *argument* or *parameter*)
 
-**6**)  - the amount of money we want the Change.change method to find the number of coins for.
+**6**)     - the amount of money we want the Change.change method to find the number of coins for.
 
-**).to eq** - to equal we expect the result of subject.change(6) *to equal* the array [5,1]
+**).to eq**    - to equal we expect the result of subject.change(6) *to equal* the array [5,1]
 
-**[5,1]** - this is the result we expect from calling the subject.change method with amount *6 cents*
+**[5,1]**    - this is the result we expect from calling the subject.change method with amount *6 cents*
 
-So putting it all together, we **expect** the *result* from the **change** *method* *to equal* **[5,1]** [5 cents, 1 cent] when we *input* **6** *cents*.
+
+Putting it *all together*: we **expect** the *result* from the **change** *method* *to equal*  **[5,1]**  or  [5 cents, 1 cent] when we *input*  **6** *cents*.
 
 
 **Note**: **subject** is a *shorthand* for calling the *Class* **Change**. 
@@ -55,7 +56,10 @@ So when we call *subject.change* we are indireclyt calling the Change.chage meth
 #### Run it yourslef:
 To run this script from the command line simply issue the command:
 
-    $ rspec change_spec.rb
+    $ git clone https://github.com/nelsonic/coin-change.git
+    $ cd coin-change
+    $ bundle                 # this will install rspec if you don't already have it
+    $ rspec change_spec.rb   # run the tests
 
 ( note you will need to have **ruby** and **rspec** *installed* on your machine for this to work )
 
