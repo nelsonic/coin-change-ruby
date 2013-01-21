@@ -1,14 +1,14 @@
 ## A Simple Solution to the Coin Change Problem written in **Ruby** (Rspec):
 
-This an **absolute basic** *Computer Science* problem that I just never 
-(made time to) *solve* by writing code ...
+This an **absolute basic** *Computer Science* problem that I always *understood* but never 
+(*made time* to) *solve* by writing code ...
 
 Conceptually, its *obvious* (once you understand it!), but actually *using* the (Programming) Language 
-to *solve* it is a surprisingly good (almost *therapeutic*) exercise ... **Try it**!
+to *solve* it is a surprisingly good (almost *therapeutic*) exercise ... **Try it** its *Easy*!
 
 ### Summary of the Problem:
 
-1. Given an *input* **amount** of Money
+1. Given an *input* **amount** ( of Money )
 
 2. Return the *smallest number* of **coins** that for the amount (as an *array*)
 
@@ -18,21 +18,23 @@ to *solve* it is a surprisingly good (almost *therapeutic*) exercise ... **Try i
 - http://www.algorithmist.com/index.php/Coin_Change
 
 #### Example:
-if we *input* **6** (cents)
-should get **One Nicle** (5 Cents) *and* **One Cent**
-or in **array** format **[5,1]**
+- if we *input* **6** (cents)
+- should get **One Nicle** (5 Cents) *and* **One Cent**
+- or in **array** format **[5,1]**
 
-( Using American Coins here: http://en.wikipedia.org/wiki/Coins_of_the_United_States_dollar )
+( Using *American* Coins here: http://en.wikipedia.org/wiki/Coins_of_the_United_States_dollar )
 
-The way we *"test"* the returned amount using **Rspec** by writing a *Unit Test*:
+The way we *"test"* the returned result using **Rspec** is by writing a *Unit Test*:
 
     it "returns [5, 1] for 6" do
         expect(subject.change(6)).to eq [5,1]
     end
 
 #### Explanation: 
-With this *test* we are saying **it** (the function/method) will return a **result [5,1]** for **input 6**
-then we write an *"Expectation"* to test this.
+With this *test* we are saying **it** (the function/method) will return a **result** of  **[5,1]** for **input 6**
+then we write an *"Expectation"* to *test* this [Empirically](http://en.wikipedia.org/wiki/Empirical_evidence).
+
+##### Lets Break Down that Test Line-by-Line:
 
 **expect(**    - setting up an *expectation* for the *result* we are going to get back from calling the change *method*
 
@@ -57,13 +59,15 @@ So when we call *subject.change* we are indirectly calling the Change.chage meth
 
 #### Run It Yourslef:
 To run this script from the command line you will need to have **ruby** and **rspec** *installed* on your machine.
+
 Open a *Terminal* window and type:
 
-    $ ruby -v
+    $ ruby -v    # Tells you which version of Ruby you have installed.
 
 if you do not have ruby > 1.9.3 installed read my *StackOverflow* post on getting this set up:
-http://stackoverflow.com/questions/3696564/how-to-update-ruby-to-1-9-x-on-mac/14182172#14182172 
-( while the title suggests its for *Mac* the installation steps work equally well on *Linux*! )
+http://stackoverflow.com/questions/3696564/how-to-update-ruby-to-1-9-x-on-mac/14182172#14182172
+
+( while the title *suggests* its **Mac** *only* the installation steps work equally well on **Linux**! )
 
 With Ruby & Rspec installed simply issue the *commands*:
 
@@ -72,10 +76,7 @@ With Ruby & Rspec installed simply issue the *commands*:
     $ bundle                 # this will install rspec if you don't already have it
     $ rspec change_spec.rb   # run the tests
 
-( note you will need to have for this to work )
-
-
-You will see output in your Terminal:
+You will see *output* in your Terminal window:
 
         Remaining Amount: 1 | Coin: 1
         Amount 1 >> Coins: [1]
