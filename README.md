@@ -53,7 +53,7 @@ We can do this becaue we *described* the group of tests as **Change** above (*de
 this means we are testing the Change *Class* in our Unit tests.
 So when we call *subject.change* we are indireclyt calling the Change.chage method.
 
-#### Run it yourslef:
+#### Run It Yourslef:
 To run this script from the command line simply issue the command:
 
     $ git clone https://github.com/nelsonic/coin-change.git
@@ -64,6 +64,40 @@ To run this script from the command line simply issue the command:
 ( note you will need to have **ruby** and **rspec** *installed* on your machine for this to work )
 
 
+You will see output in your Terminal:
+
+        Remaining Amount: 1 | Coin: 1
+        Amount 1 >> Coins: [1]
+
+        .Remaining Amount: 4 | Coin: 1
+        Amount 4 >> Coins: [1, 1, 1, 1]
+
+        .Remaining Amount: 6 | Coin: 5
+        Remaining Amount: 1 | Coin: 1
+        Amount 6 >> Coins: [5, 1]
+
+        .Remaining Amount: 48 | Coin: 25
+        Remaining Amount: 23 | Coin: 10
+        Remaining Amount: 3 | Coin: 1
+        Amount 48 >> Coins: [25, 10, 10, 1, 1, 1]
+
+        .Remaining Amount: 142 | Coin: 100
+        Remaining Amount: 42 | Coin: 25
+        Remaining Amount: 17 | Coin: 10
+        Remaining Amount: 7 | Coin: 5
+        Remaining Amount: 2 | Coin: 1
+        Amount 142 >> Coins: [100, 25, 10, 5, 1, 1]
+
+        .Remaining Amount: 291 | Coin: 100
+        Remaining Amount: 91 | Coin: 50
+        Remaining Amount: 41 | Coin: 25
+        Remaining Amount: 16 | Coin: 10
+        Remaining Amount: 6 | Coin: 5
+        Remaining Amount: 1 | Coin: 1
+        Amount 291 >> Coins: [100, 100, 50, 25, 10, 5, 1]
+
+
+#### Discussion:
 I solved using a couple of different approaches. 
 
 The solution in **change_spec.rb** is elegant and simple to understand.
