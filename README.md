@@ -56,14 +56,23 @@ this means we are testing the Change *Class* in our Unit tests.
 So when we call *subject.change* we are indirectly calling the Change.chage method.
 
 #### Run It Yourslef:
-To run this script from the command line simply issue the command:
+To run this script from the command line you will need to have **ruby** and **rspec** *installed* on your machine.
+Open a *Terminal* window and type:
+
+    $ ruby -v
+
+if you do not have ruby > 1.9.3 installed read my *StackOverflow* post on getting this set up:
+http://stackoverflow.com/questions/3696564/how-to-update-ruby-to-1-9-x-on-mac/14182172#14182172 
+( while the title suggests its for *Mac* the installation steps work equally well on *Linux*! )
+
+With Ruby & Rspec installed simply issue the *commands*:
 
     $ git clone https://github.com/nelsonic/coin-change.git
     $ cd coin-change
     $ bundle                 # this will install rspec if you don't already have it
     $ rspec change_spec.rb   # run the tests
 
-( note you will need to have **ruby** and **rspec** *installed* on your machine for this to work )
+( note you will need to have for this to work )
 
 
 You will see output in your Terminal:
