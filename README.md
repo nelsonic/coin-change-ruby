@@ -49,9 +49,11 @@ Putting it *all together*: we **expect** the *result* from the **change** *metho
 
 
 **Note**: **subject** is a *shorthand* for calling the *Class* **Change**. 
-We can do this becaue we *described* the group of tests as **Change** above (*describe Change do*)
+
+We can do this becaue we *described* the group of tests as **Change** above ( **describe Change do** )
 this means we are testing the Change *Class* in our Unit tests.
-So when we call *subject.change* we are indireclyt calling the Change.chage method.
+
+So when we call *subject.change* we are indirectly calling the Change.chage method.
 
 #### Run It Yourslef:
 To run this script from the command line simply issue the command:
